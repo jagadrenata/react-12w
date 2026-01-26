@@ -1,9 +1,9 @@
-import Home from './pages/Home.jsx'
+import TeamMaker from './pages/w6/TeamMaker'
 
 function App() {
   return (
     <>
-      <Home/>
+      <TeamMaker/>
     </>
   )
 }
