@@ -1,11 +1,16 @@
-import TeamMaker from './pages/w6/TeamMaker'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
+import Home from './pages/Home';
+import TeamMaker from './pages/w6/TeamMaker';
+
+
+export default function App() {
   return (
-    <>
-      <TeamMaker/>
-    </>
-  )
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<TeamMaker />} />
+          </Routes>
+      </BrowserRouter>
+  );
 }
-
-export default App
